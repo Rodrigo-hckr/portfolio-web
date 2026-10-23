@@ -1,4 +1,4 @@
-import React from 'react';
+kimport React from 'react';
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
         <h1 className="text-2xl font-bold text-emerald-400">Rodrigo-hckr</h1>
         <div className="space-x-6 hidden md:flex text-sm font-medium">
           <a href="#about" className="hover:text-emerald-400 transition">About</a>
+          <a href="#foundations" className="hover:text-emerald-400 transition">Foundations</a>
           <a href="#projects" className="hover:text-emerald-400 transition">Projects</a>
           <a href="#roadmap" className="hover:text-emerald-400 transition">Journey</a>
         </div>
@@ -74,11 +75,80 @@ function App() {
         </div>
       </section>
 
+      {/* FOUNDATIONS SECTION (AI SECURITY MATH) */}
+      <section id="foundations" className="py-20 px-8 bg-slate-800/20">
+        <div className="max-w-5xl mx-auto">
+          <h3 className="text-3xl font-bold mb-4 text-white flex items-center">
+            <span className="text-emerald-400 mr-2">02.</span> Foundations of AI Security
+          </h3>
+          <p className="text-slate-400 mb-10 text-lg">
+            Understanding the math behind the machine. To defend AI, you must understand how it processes data.
+          </p>
+
+          {/* Article Card */}
+          <div className="bg-slate-800 border border-slate-700 rounded-2xl p-8 md:p-12">
+            <h4 className="text-2xl md:text-3xl font-bold text-white mb-6">
+              🧮 Math for AI Security: The Linear Algebra behind Cybersecurity
+            </h4>
+            
+            <div className="prose prose-invert prose-emerald max-w-none text-slate-300">
+              <p className="mb-4">
+                When we think of an Ethical Hacker, we picture someone typing commands in Kali Linux or analyzing traffic in Wireshark. However, when we transition into <strong>Artificial Intelligence (AI)</strong>, the rules change. To protect an AI model, we need to understand <em>how the machine thinks</em>.
+              </p>
+              <p className="mb-8">
+                Machines don't think in commands; they think in <strong>numbers and matrices</strong>. This is where <strong>Linear Algebra</strong> comes in.
+              </p>
+
+              <h5 className="text-xl font-bold text-emerald-400 mt-6 mb-4">From Math Concept to Real Application</h5>
+              
+              <div className="overflow-x-auto">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="border-b border-slate-600">
+                      <th className="py-3 px-4 font-bold text-white bg-slate-900/50">Math Concept</th>
+                      <th className="py-3 px-4 font-bold text-white bg-slate-900/50">What is it?</th>
+                      <th className="py-3 px-4 font-bold text-white bg-slate-900/50">AI Security Application</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-slate-700/50 hover:bg-slate-700/30">
+                      <td className="py-3 px-4 font-mono text-emerald-300">Vectors</td>
+                      <td className="py-3 px-4">Ordered list of numbers.</td>
+                      <td className="py-3 px-4"><strong>Log Analysis:</strong> Each log (IP, port, request) becomes a vector, allowing mathematical analysis of millions of logs.</td>
+                    </tr>
+                    <tr className="border-b border-slate-700/50 hover:bg-slate-700/30">
+                      <td className="py-3 px-4 font-mono text-emerald-300">Matrices</td>
+                      <td className="py-3 px-4">2D array of numbers.</td>
+                      <td className="py-3 px-4"><strong>Data Representation:</strong> A network traffic dataset is a giant matrix where rows are connections and columns are features.</td>
+                    </tr>
+                    <tr className="border-b border-slate-700/50 hover:bg-slate-700/30">
+                      <td className="py-3 px-4 font-mono text-emerald-300">Dot Product</td>
+                      <td className="py-3 px-4">Multiplying two vectors.</td>
+                      <td className="py-3 px-4"><strong>RAG Security:</strong> Compares how similar a malicious prompt is to known attack vectors.</td>
+                    </tr>
+                    <tr className="border-b border-slate-700/50 hover:bg-slate-700/30">
+                      <td className="py-3 px-4 font-mono text-emerald-300">Gradient</td>
+                      <td className="py-3 px-4">Direction of maximum change.</td>
+                      <td className="py-3 px-4"><strong>Evasion Attacks (FGSM):</strong> Modifying input slightly to fool an AI-based antivirus.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h5 className="text-xl font-bold text-emerald-400 mt-8 mb-4">The Conclusion</h5>
+              <p>
+                As an Ethical Hacker transitioning to Cybersecurity AI Engineer, understanding math doesn't make you less of a hacker; it makes you a <strong>more dangerous and effective one</strong>. It allows you to understand <em>why</em> a model fails and <em>how</em> to build robust defenses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PROJECTS SECTION */}
       <section id="projects" className="py-20 px-8 bg-slate-800/40">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl font-bold mb-12 text-white flex items-center">
-             <span className="text-emerald-400 mr-2">02.</span> Featured Projects
+             <span className="text-emerald-400 mr-2">03.</span> Featured Projects
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -133,7 +203,7 @@ function App() {
       {/* ROADMAP & UPDATES SECTION */}
       <section id="roadmap" className="py-20 px-8 max-w-4xl mx-auto">
         <h3 className="text-3xl font-bold mb-4 text-white flex items-center">
-          <span className="text-emerald-400 mr-2">03.</span> Learning Journey
+          <span className="text-emerald-400 mr-2">04.</span> Learning Journey
         </h3>
         <p className="text-slate-400 mb-12">Documenting my transition from Ethical Hacker to AI Security Engineer.</p>
         
