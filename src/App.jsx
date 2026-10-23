@@ -41,10 +41,10 @@ function App() {
         
         <div className="md:w-1/2 flex justify-center">
           {/* Contenedor de la foto con efecto */}
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-emerald-500/50 p-2">
-            <img 
-              src="/foto-perfil.jpg" 
-              alt="Rodrigo Moguel" 
+          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-emerald-500 p-2">
+            <img
+              src={`${import.meta.env.BASE_URL}foto-perfil.jpg`}
+              alt="Rodrigo Moguel"
               className="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition duration-500"
             />
             <div className="absolute inset-0 rounded-full border border-emerald-400 animate-pulse opacity-50 pointer-events-none"></div>
