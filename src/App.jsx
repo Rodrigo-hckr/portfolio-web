@@ -1,4 +1,4 @@
-kimport React from 'react';
+import React from 'react';
 
 function App() {
   return (
