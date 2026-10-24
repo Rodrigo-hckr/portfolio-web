@@ -144,11 +144,68 @@ function App() {
         </div>
       </section>
 
+      {/* BLOG / ML ARTICLE SECTION */}
+      <section id="blog" className="py-20 px-8 bg-slate-900">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-3xl font-bold mb-8 text-white flex items-center">
+            <span className="text-emerald-400 mr-2">03.</span> Technical Blog
+          </h3>
+          
+          <article className="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden">
+            <div className="p-8 md:p-12">
+              <h4 className="text-3xl font-bold text-white mb-4">
+                Understanding Machine Learning: Building a Linear Regression Model in Python
+              </h4>
+              <p className="text-emerald-400 font-mono text-sm mb-8">Published: October 2026</p>
+              
+              <div className="prose prose-invert prose-emerald max-w-none text-slate-300">
+                <p className="mb-6">
+                  As I transition from pure cybersecurity to <strong>AI Security</strong>, understanding how models learn is crucial. Before I can secure an AI, I need to know how to build one. My first step: a simple Linear Regression model to predict house prices based on their square meters.
+                </p>
+
+                <h5 className="text-xl font-bold text-white mt-8 mb-4">1. Setting up the Data</h5>
+                <p className="mb-4">
+                  Using <code>NumPy</code>, we create our training data. We need an array of features (square meters) and an array of targets (prices). The <code>.reshape(-1, 1)</code> is critical here: Scikit-Learn expects a 2D matrix for the X values.
+                </p>
+                <div className="bg-slate-900 p-4 rounded-lg my-4 font-mono text-sm text-emerald-300">
+                  x = np.array([50, 100, 150]).reshape(-1, 1)<br/>
+                  y = np.array([50000, 100000, 150000])
+                </div>
+
+                <h5 className="text-xl font-bold text-white mt-8 mb-4">2. Training the Model</h5>
+                <p className="mb-4">
+                  We instantiate the <code>LinearRegression</code> class and call <code>fit()</code>. During this phase, the algorithm calculates the slope (m) and the y-intercept (b) of the mathematical line that best fits the data.
+                </p>
+
+                <h5 className="text-xl font-bold text-white mt-8 mb-4">3. The Prediction</h5>
+                <p className="mb-4">
+                  Once trained, the model reveals its learned pattern: <code className="text-emerald-400">Price = (1000 * m²) + 0</code>. When we ask it to predict the price for a new 120 m² house, it applies this formula.
+                </p>
+
+                <div className="bg-slate-900 p-6 rounded-lg my-6 border border-slate-700">
+                  <h6 className="font-bold text-emerald-400 mb-2">💻 Output:</h6>
+                  <p className="font-mono text-sm text-slate-300">
+                    patrón aprendido: precio = (1000 * Metros cuadrados) + 0<br/>
+                    Predicción para 120 m2: $120,000.00
+                  </p>
+                </div>
+
+                <p className="mt-8 pt-6 border-t border-slate-700">
+                  <a href="https://github.com/Rodrigo-hckr/portfolio-ai-security/tree/main/projects/ml-basics" target="_blank" rel="noreferrer" className="text-emerald-400 font-bold hover:underline">
+                    View the full source code on GitHub →
+                  </a>
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       {/* PROJECTS SECTION */}
       <section id="projects" className="py-20 px-8 bg-slate-800/40">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl font-bold mb-12 text-white flex items-center">
-             <span className="text-emerald-400 mr-2">03.</span> Featured Projects
+             <span className="text-emerald-400 mr-2">04.</span> Featured Projects
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -203,7 +260,7 @@ function App() {
       {/* ROADMAP & UPDATES SECTION */}
       <section id="roadmap" className="py-20 px-8 max-w-4xl mx-auto">
         <h3 className="text-3xl font-bold mb-4 text-white flex items-center">
-          <span className="text-emerald-400 mr-2">04.</span> Learning Journey
+          <span className="text-emerald-400 mr-2">05.</span> Learning Journey
         </h3>
         <p className="text-slate-400 mb-12">Documenting my transition from Ethical Hacker to AI Security Engineer.</p>
         
